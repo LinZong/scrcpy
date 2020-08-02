@@ -1,0 +1,3 @@
+/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rtmp-lib.dir

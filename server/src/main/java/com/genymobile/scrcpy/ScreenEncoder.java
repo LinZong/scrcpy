@@ -4,9 +4,15 @@ import android.graphics.Rect;
 import android.media.MediaCodec;
 import android.media.MediaCodecInfo;
 import android.media.MediaFormat;
+import android.os.Handler;
 import android.os.IBinder;
+import android.os.Looper;
 import android.view.Surface;
 
+import com.cry.cry.rtmp.RtmpClient;
+import com.cry.cry.rtmp.rtmp.FLvMetaData;
+import com.cry.cry.rtmp.sender.model.RESCoreParameters;
+import com.genymobile.scrcpy.RtmpHelper.FlvMetaData;
 import com.genymobile.scrcpy.RtmpHelper.Packager;
 import com.genymobile.scrcpy.wrappers.SurfaceControl;
 import com.github.faucamp.simplertmp.DefaultRtmpPublisher;
@@ -27,7 +33,7 @@ import lombok.NoArgsConstructor;
 
 public class ScreenEncoder implements Device.RotationListener {
 
-    private static final int DEFAULT_I_FRAME_INTERVAL = 10; // seconds
+    private static final int DEFAULT_I_FRAME_INTERVAL = 5; // seconds
     private static final int REPEAT_FRAME_DELAY_US = 100_000; // repeat after 100ms
     private static final String KEY_MAX_FPS_TO_ENCODER = "max-fps-to-encoder";
 
@@ -44,10 +50,13 @@ public class ScreenEncoder implements Device.RotationListener {
     private long ptsOrigin;
 
     // Use for RTMP Streaming
-    private DefaultRtmpPublisher rtmpMuxer;
+    private final int MAX_QUEUE_CAPACITY = 50;
     private String rtmpServerUrl;
-    private LinkedBlockingDeque<RtmpMessage> rtmpMessagesQueue = new LinkedBlockingDeque<>();
+    private LinkedBlockingDeque<RtmpMessage> rtmpMessagesQueue = new LinkedBlockingDeque<>(MAX_QUEUE_CAPACITY);
+    private Object syncWriteMsg = new Object();
+    private int writeMsgNum = 0;
     private long startTime;
+    private long jniPointer;
 
     public ScreenEncoder(boolean sendFrameMeta, int bitRate, int maxFps, List<CodecOption> codecOptions) {
         this.sendFrameMeta = sendFrameMeta;
@@ -63,39 +72,6 @@ public class ScreenEncoder implements Device.RotationListener {
         this.codecOptions = codecOptions;
 
         this.rtmpServerUrl = rtmpServerUrl;
-        if(rtmpServerUrl != null) {
-            rtmpMuxer = new DefaultRtmpPublisher(new ConnectCheckerRtmp() {
-                @Override
-                public void onConnectionSuccessRtmp() {
-                    rtmpStreamingEnabled.getAndSet(true);
-                }
-
-                @Override
-                public void onConnectionFailedRtmp(String reason) {
-
-                }
-
-                @Override
-                public void onNewBitrateRtmp(long bitrate) {
-
-                }
-
-                @Override
-                public void onDisconnectRtmp() {
-
-                }
-
-                @Override
-                public void onAuthErrorRtmp() {
-
-                }
-
-                @Override
-                public void onAuthSuccessRtmp() {
-
-                }
-            });
-        }
     }
 
     private boolean isRtmpStreamingEnabled() {
@@ -129,15 +105,29 @@ public class ScreenEncoder implements Device.RotationListener {
     // Video Content Rect for sending RTMP stream.
     private Rect videoRect;
 
+    private boolean openRtmpConnect() {
+        jniPointer = RtmpClient.open(rtmpServerUrl, true);
+        return jniPointer != 0;
+    }
+
+    private void firstHandshake(int frameRate,int width,int height) {
+
+        RESCoreParameters cp = new RESCoreParameters();
+        cp.mediacodecAVCFrameRate = 60;
+        cp.videoWidth = videoRect.width();
+        cp.videoHeight = videoRect.height();
+        FLvMetaData fLvMetaData = new FLvMetaData(cp);
+        byte[] flvMetaBytes = fLvMetaData.getMetaData();
+        RtmpClient.write(jniPointer,
+                flvMetaBytes,
+                flvMetaBytes.length,
+                Packager.FLVPackager.FLV_RTMP_PACKET_TYPE_INFO, 0);
+    }
+
     private void tryOpenRtmpStreaming() {
         new Thread(() -> {
-            if (rtmpMuxer == null) {
-                Ln.i("No RTMP Muxer, exit.");
-                return;
-            }
-            rtmpMuxer.setVideoResolution(videoRect.width(), videoRect.height());
             for (int i = 1; i <= 30; i++) {
-                if (!rtmpMuxer.connect(rtmpServerUrl)) {
+                if (!openRtmpConnect()) {
                     Ln.e("Connect to RTMP server: " + rtmpServerUrl + " failed. Retrying times: " + i);
                     try {
                         Thread.sleep(500);
@@ -147,7 +137,7 @@ public class ScreenEncoder implements Device.RotationListener {
                 } else {
                     Ln.i("Connect to RTMP server: " + rtmpServerUrl + " successfully!");
                     rtmpStreamingEnabled.getAndSet(true);
-                    rtmpMuxer.publish("live");
+                    firstHandshake(60, videoRect.width(),videoRect.height());
                     rtmpStreamingEventLoop();
                     break;
                 }
@@ -158,24 +148,23 @@ public class ScreenEncoder implements Device.RotationListener {
     private void rtmpStreamingEventLoop() {
         new Thread(() -> {
             while (isRtmpStreamingEnabled()) {
-                try {
-                    RtmpMessage msg = rtmpMessagesQueue.poll(1L, TimeUnit.SECONDS);
-                    if(msg != null) {
-                        switch (msg.type) {
-                            case Packager.FLVPackager.FLV_RTMP_PACKET_TYPE_INFO:
-                            case Packager.FLVPackager.FLV_RTMP_PACKET_TYPE_VIDEO:
-                                rtmpMuxer.publishVideoData(msg.buffer, msg.bufferSize, (int)msg.dts);
-                        }
+
+                if(!rtmpMessagesQueue.isEmpty()) {
+                    synchronized (syncWriteMsg) {
+                        writeMsgNum--;
                     }
-                } catch (Exception e) {
-                    e.printStackTrace();
+
+                    RtmpMessage elem = rtmpMessagesQueue.pop();
+                    if(writeMsgNum >= ( (MAX_QUEUE_CAPACITY*2)/3 ) && ( elem.type == Packager.FLVPackager.FLV_RTMP_PACKET_TYPE_VIDEO ) ) {
+                        continue;
+                    }
+                    final int res = RtmpClient.write(jniPointer,elem.buffer,elem.buffer.length, elem.type, (int)elem.dts);
                 }
             }
         }).start();
     }
 
     private void internalStreamScreen(Device device, FileDescriptor fd) throws IOException {
-        MediaFormat format = createFormat(bitRate, maxFps, codecOptions);
         device.setRotationListener(this);
         boolean alive;
         try {
@@ -183,9 +172,13 @@ public class ScreenEncoder implements Device.RotationListener {
                 MediaCodec codec = createCodec();
                 IBinder display = createDisplay();
                 ScreenInfo screenInfo = device.getScreenInfo();
+                videoRect = screenInfo.getVideoSize().toRect();
+                MediaFormat format = createFormat(bitRate, maxFps,videoRect.width(),videoRect.height(),codecOptions);
+
+
+
                 Rect contentRect = screenInfo.getContentRect();
                 // include the locked video orientation
-                videoRect = screenInfo.getVideoSize().toRect();
                 // does not include the locked video orientation
                 Rect unlockedVideoRect = screenInfo.getUnlockedVideoSize().toRect();
                 int videoRotation = screenInfo.getVideoRotation();
@@ -209,7 +202,7 @@ public class ScreenEncoder implements Device.RotationListener {
                     surface.release();
                     if (isRtmpStreamingEnabled()) {
                         Ln.i("Closing RTMP stream...");
-                        rtmpMuxer.close();
+                        RtmpClient.close(jniPointer);
                         rtmpStreamingEnabled.getAndSet(false);
                         Ln.i("RTMP Stream closed.");
                     }
@@ -243,7 +236,7 @@ public class ScreenEncoder implements Device.RotationListener {
         System.arraycopy(AVCDecoderConfigurationRecord, 0,
                 finalBuff, Packager.FLVPackager.FLV_VIDEO_TAG_LENGTH, AVCDecoderConfigurationRecord.length);
         try {
-            rtmpMessagesQueue.put(new RtmpMessage(finalBuff,0,packetLen,Packager.FLVPackager.FLV_RTMP_PACKET_TYPE_INFO));
+            rtmpMessagesQueue.put(new RtmpMessage(finalBuff,0,packetLen,Packager.FLVPackager.FLV_RTMP_PACKET_TYPE_VIDEO));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -274,9 +267,14 @@ public class ScreenEncoder implements Device.RotationListener {
                 false,
                 frameType == 5,
                 realDataLength);
-
         try {
-            rtmpMessagesQueue.put(new RtmpMessage(finalBuff, finalDts, packetLen, Packager.FLVPackager.FLV_RTMP_PACKET_TYPE_VIDEO));
+            synchronized (syncWriteMsg) {
+
+                if(writeMsgNum <= MAX_QUEUE_CAPACITY) {
+                    rtmpMessagesQueue.put(new RtmpMessage(finalBuff, finalDts, packetLen, Packager.FLVPackager.FLV_RTMP_PACKET_TYPE_VIDEO));
+                    writeMsgNum++;
+                }
+            }
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -285,7 +283,6 @@ public class ScreenEncoder implements Device.RotationListener {
     private boolean encode(MediaCodec codec, FileDescriptor fd) throws IOException {
         boolean eof = false;
         MediaCodec.BufferInfo bufferInfo = new MediaCodec.BufferInfo();
-        long mLastReceivedAudioFrameTimeStamp = -1;
         while (!consumeRotationChange() && !eof) {
             int outputBufferId = codec.dequeueOutputBuffer(bufferInfo, -1);
             eof = (bufferInfo.flags & MediaCodec.BUFFER_FLAG_END_OF_STREAM) != 0;
@@ -311,7 +308,9 @@ public class ScreenEncoder implements Device.RotationListener {
                     // rewind for rtmp sending.
 
                     codecBuffer.rewind();
-                    handleVideoDataArrived(bufferInfo, codecBuffer);
+                    if(bufferInfo.size != 0 && bufferInfo.flags != MediaCodec.BUFFER_FLAG_CODEC_CONFIG) {
+                        handleVideoDataArrived(bufferInfo, codecBuffer);
+                    }
                 }
             } finally {
                 if (outputBufferId >= 0) {
@@ -369,9 +368,9 @@ public class ScreenEncoder implements Device.RotationListener {
         Ln.d("Codec option set: " + key + " (" + value.getClass().getSimpleName() + ") = " + value);
     }
 
-    private static MediaFormat createFormat(int bitRate, int maxFps, List<CodecOption> codecOptions) {
-        MediaFormat format = new MediaFormat();
-        format.setString(MediaFormat.KEY_MIME, MediaFormat.MIMETYPE_VIDEO_AVC);
+    private static MediaFormat createFormat(int bitRate, int maxFps, int videoWidth, int videoHeight,List<CodecOption> codecOptions) {
+        MediaFormat format = MediaFormat.createVideoFormat(MediaFormat.MIMETYPE_VIDEO_AVC,videoWidth, videoHeight);
+//        MediaFormat.MIMETYPE_VIDEO_AVC
         format.setInteger(MediaFormat.KEY_BIT_RATE, bitRate);
         // must be present to configure the encoder, but does not impact the actual frame rate, which is variable
         format.setInteger(MediaFormat.KEY_FRAME_RATE, 60);

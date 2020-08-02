@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/debug/x86",
+  "command": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=i686-none-linux-android21 --gcc-toolchain=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/rtmp-lib.dir/src/main/cpp/rtmp-hanlde.cpp.o -c /Users/hotarine/Code/scrcpy/rtmp/src/main/cpp/rtmp-hanlde.cpp",
+  "file": "/Users/hotarine/Code/scrcpy/rtmp/src/main/cpp/rtmp-hanlde.cpp"
+},
+
+{
+  "directory": "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/debug/x86",
+  "command": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android21 --gcc-toolchain=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/amf.c.o   -c /Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/amf.c",
+  "file": "/Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/amf.c"
+},
+
+{
+  "directory": "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/debug/x86",
+  "command": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android21 --gcc-toolchain=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/hashswf.c.o   -c /Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/hashswf.c",
+  "file": "/Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/hashswf.c"
+},
+
+{
+  "directory": "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/debug/x86",
+  "command": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android21 --gcc-toolchain=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/log.c.o   -c /Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/log.c",
+  "file": "/Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/log.c"
+},
+
+{
+  "directory": "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/debug/x86",
+  "command": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android21 --gcc-toolchain=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/parseurl.c.o   -c /Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/parseurl.c",
+  "file": "/Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/parseurl.c"
+},
+
+{
+  "directory": "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/debug/x86",
+  "command": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android21 --gcc-toolchain=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/rtmp.c.o   -c /Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/rtmp.c",
+  "file": "/Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/rtmp.c"
+}
+]

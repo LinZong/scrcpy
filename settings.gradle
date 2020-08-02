@@ -1,2 +1,3 @@
+include ':rtmp'
 include ':rtmp-client'
 include ':server'

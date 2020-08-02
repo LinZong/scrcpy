@@ -38,7 +38,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
-    implementation project(":rtmp-client")
+    implementation project(":rtmp")
 }
 
 apply from: "$project.rootDir/config/android-checkstyle.gradle"
