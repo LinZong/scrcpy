@@ -56,9 +56,9 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Order-only phony target for rtmp-lib
 
 build cmake_object_order_depends_target_rtmp-lib: phony
-build CMakeFiles/rtmp-lib.dir/src/main/cpp/rtmp-hanlde.cpp.o: CXX_COMPILER__rtmp-lib ../../../../src/main/cpp/rtmp-hanlde.cpp || cmake_object_order_depends_target_rtmp-lib
+build CMakeFiles/rtmp-lib.dir/src/main/cpp/rtmp-handle.cpp.o: CXX_COMPILER__rtmp-lib ../../../../src/main/cpp/rtmp-handle.cpp || cmake_object_order_depends_target_rtmp-lib
   DEFINES = -DNO_CRYPTO -Drtmp_lib_EXPORTS
-  DEP_FILE = CMakeFiles/rtmp-lib.dir/src/main/cpp/rtmp-hanlde.cpp.o.d
+  DEP_FILE = CMakeFiles/rtmp-lib.dir/src/main/cpp/rtmp-handle.cpp.o.d
   FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC
   INCLUDES = -I../../../../libs/rtmp/librtmp
   OBJECT_DIR = CMakeFiles/rtmp-lib.dir
@@ -106,7 +106,7 @@ build CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/rtmp.c.o: C_COMPILER__rtmp-lib .
 #############################################
 # Link the shared library ../../../../build/intermediates/cmake/debug/obj/x86/librtmp-lib.so
 
-build ../../../../build/intermediates/cmake/debug/obj/x86/librtmp-lib.so: CXX_SHARED_LIBRARY_LINKER__rtmp-lib CMakeFiles/rtmp-lib.dir/src/main/cpp/rtmp-hanlde.cpp.o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/amf.c.o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/hashswf.c.o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/log.c.o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/parseurl.c.o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/rtmp.c.o | /Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/21/liblog.so
+build ../../../../build/intermediates/cmake/debug/obj/x86/librtmp-lib.so: CXX_SHARED_LIBRARY_LINKER__rtmp-lib CMakeFiles/rtmp-lib.dir/src/main/cpp/rtmp-handle.cpp.o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/amf.c.o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/hashswf.c.o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/log.c.o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/parseurl.c.o CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/rtmp.c.o | /Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/21/liblog.so
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack
   LINK_LIBRARIES = -llog -latomic -lm

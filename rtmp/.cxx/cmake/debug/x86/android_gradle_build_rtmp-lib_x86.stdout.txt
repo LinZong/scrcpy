@@ -2,20 +2,20 @@ ninja: Entering directory `/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/debug/x86
 [1/7] Building C object CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/hashswf.c.o
 [2/7] Building C object CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/log.c.o
 [3/7] Building C object CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/parseurl.c.o
-[4/7] Building CXX object CMakeFiles/rtmp-lib.dir/src/main/cpp/rtmp-hanlde.cpp.o
-../../../../src/main/cpp/rtmp-hanlde.cpp:84:16: warning: implicit conversion of NULL constant to 'jlong' (aka 'long long') [-Wnull-conversion]
+[4/7] Building CXX object CMakeFiles/rtmp-lib.dir/src/main/cpp/rtmp-handle.cpp.o
+../../../../src/main/cpp/rtmp-handle.cpp:84:16: warning: implicit conversion of NULL constant to 'jlong' (aka 'long long') [-Wnull-conversion]
         return NULL;
         ~~~~~~ ^~~~
                0
-../../../../src/main/cpp/rtmp-hanlde.cpp:94:16: warning: implicit conversion of NULL constant to 'jlong' (aka 'long long') [-Wnull-conversion]
+../../../../src/main/cpp/rtmp-handle.cpp:94:16: warning: implicit conversion of NULL constant to 'jlong' (aka 'long long') [-Wnull-conversion]
         return NULL;
         ~~~~~~ ^~~~
                0
-../../../../src/main/cpp/rtmp-hanlde.cpp:105:16: warning: implicit conversion of NULL constant to 'jlong' (aka 'long long') [-Wnull-conversion]
+../../../../src/main/cpp/rtmp-handle.cpp:105:16: warning: implicit conversion of NULL constant to 'jlong' (aka 'long long') [-Wnull-conversion]
         return NULL;
         ~~~~~~ ^~~~
                0
-../../../../src/main/cpp/rtmp-hanlde.cpp:115:16: warning: implicit conversion of NULL constant to 'jlong' (aka 'long long') [-Wnull-conversion]
+../../../../src/main/cpp/rtmp-handle.cpp:115:16: warning: implicit conversion of NULL constant to 'jlong' (aka 'long long') [-Wnull-conversion]
         return NULL;
         ~~~~~~ ^~~~
                0

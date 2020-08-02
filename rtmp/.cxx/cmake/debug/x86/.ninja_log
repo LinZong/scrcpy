@@ -1,8 +1,8 @@
 # ninja log v5
-1	192	1596362365	CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/hashswf.c.o	ce3a52fea1918624
-1	200	1596362365	CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/log.c.o	eb72ffc668c46137
-2	202	1596362365	CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/parseurl.c.o	d8d1e4fe7a1dc663
-0	234	1596362365	CMakeFiles/rtmp-lib.dir/src/main/cpp/rtmp-hanlde.cpp.o	54eb7151ad5b38a9
-0	252	1596362365	CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/amf.c.o	4b2b3752cc17fed8
-4	475	1596362365	CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/rtmp.c.o	e446d68a91769229
-475	558	1596362365	../../../../build/intermediates/cmake/debug/obj/x86/librtmp-lib.so	d1bafe8c29011d7d
+1	122	1596364858	CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/hashswf.c.o	ce3a52fea1918624
+2	149	1596364858	CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/log.c.o	eb72ffc668c46137
+2	160	1596364858	CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/parseurl.c.o	d8d1e4fe7a1dc663
+0	192	1596364858	CMakeFiles/rtmp-lib.dir/src/main/cpp/rtmp-handle.cpp.o	a369044836a84e71
+1	217	1596364858	CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/amf.c.o	4b2b3752cc17fed8
+3	346	1596364858	CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/rtmp.c.o	e446d68a91769229
+346	377	1596364858	../../../../build/intermediates/cmake/debug/obj/x86/librtmp-lib.so	a7e83113ce2d4537

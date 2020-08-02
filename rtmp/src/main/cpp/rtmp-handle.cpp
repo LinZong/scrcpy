@@ -11,7 +11,7 @@
 
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_cry_cry_rtmp_RtmpClient_getIpAddr(JNIEnv *env, jclass type, jlong rtmpPointer) {
+Java_com_genymobile_scrcpy_rtmp_RtmpClient_getIpAddr(JNIEnv *env, jclass type, jlong rtmpPointer) {
     if (rtmpPointer != 0) {
         RTMP *r = (RTMP *) rtmpPointer;
         return env->NewStringUTF(r->ipaddr);
@@ -22,7 +22,7 @@ Java_com_cry_cry_rtmp_RtmpClient_getIpAddr(JNIEnv *env, jclass type, jlong rtmpP
 
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_cry_cry_rtmp_RtmpClient_close(JNIEnv *env, jclass type, jlong rtmpPointer) {
+Java_com_genymobile_scrcpy_rtmp_RtmpClient_close(JNIEnv *env, jclass type, jlong rtmpPointer) {
     LOGD("start close");
 
     RTMP_Close((RTMP *) rtmpPointer);
@@ -32,7 +32,7 @@ Java_com_cry_cry_rtmp_RtmpClient_close(JNIEnv *env, jclass type, jlong rtmpPoint
 
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_cry_cry_rtmp_RtmpClient_write(JNIEnv *env, jclass type_, jlong rtmpPointer,
+Java_com_genymobile_scrcpy_rtmp_RtmpClient_write(JNIEnv *env, jclass type_, jlong rtmpPointer,
                                        jbyteArray data_, jint size, jint type, jint ts) {
     jbyte *buffer = env->GetByteArrayElements(data_, NULL);
     LOGD("start write");
@@ -74,7 +74,7 @@ Java_com_cry_cry_rtmp_RtmpClient_write(JNIEnv *env, jclass type_, jlong rtmpPoin
 
 extern "C"
 JNIEXPORT jlong JNICALL
-Java_com_cry_cry_rtmp_RtmpClient_open(JNIEnv *env, jclass type, jstring url_,
+Java_com_genymobile_scrcpy_rtmp_RtmpClient_open(JNIEnv *env, jclass type, jstring url_,
                                       jboolean isPublishMode) {
     const char *url = env->GetStringUTFChars(url_, 0);
     LOGD("RTMP_OPENING:%s", url);

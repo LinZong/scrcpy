@@ -46,7 +46,7 @@
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "/Users/hotarine/Code/scrcpy/rtmp/src/main/cpp/rtmp-hanlde.cpp",
+          "src": "/Users/hotarine/Code/scrcpy/rtmp/src/main/cpp/rtmp-handle.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }

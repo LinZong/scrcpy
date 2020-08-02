@@ -8,7 +8,7 @@ file(GLOB PROJECT_SOURCES "${CMAKE_SOURCE_DIR}/libs/rtmp/librtmp/*.c")
 
 add_library(rtmp-lib
         SHARED
-        src/main/cpp/rtmp-hanlde.cpp
+        src/main/cpp/rtmp-handle.cpp
         ${PROJECT_SOURCES}
         )
 
