@@ -1,0 +1,26 @@
+# ninja log v5
+12	149	1596390027	app/scrcpy.exe.p/src_device_msg.c.obj	ac919eec986e007
+5	161	1596390027	app/scrcpy.exe.p/src_control_msg.c.obj	919bb1a0beeb8ff
+19	225	1596390027	app/scrcpy.exe.p/src_fps_counter.c.obj	a7668fa7fb18d4b8
+14	242	1596390027	app/scrcpy.exe.p/src_event_converter.c.obj	6f63ebff3ac0cbb
+7	275	1596390028	app/scrcpy.exe.p/src_decoder.c.obj	cdba517925a9c670
+150	437	1596390028	app/scrcpy.exe.p/src_recorder.c.obj	91f581d8a7b9feb3
+23	834	1596390028	app/scrcpy.exe.p/src_opengl.c.obj	3dab8b7ce12c5dfe
+440	1001	1596390028	app/scrcpy.exe.p/src_tiny_xpm.c.obj	90b2717e8320d39e
+849	1159	1596390028	app/scrcpy.exe.p/src_video_buffer.c.obj	f9812022ccafd3ba
+10	1241	1596390029	app/scrcpy.exe.p/src_device.c.obj	966b0d4f573f6156
+230	1276	1596390029	app/scrcpy.exe.p/src_screen.c.obj	bf8d4f50a8313e9b
+29	1277	1596390029	app/scrcpy.exe.p/src_receiver.c.obj	6d2ebadf66329d31
+6	1339	1596390029	app/scrcpy.exe.p/src_controller.c.obj	ee937b0d27962639
+4	1364	1596390029	app/scrcpy.exe.p/src_command.c.obj	6bce0167f4fdbae7
+1	1383	1596390029	app/scrcpy.exe.p/src_main.c.obj	90ca885cc3767e7a
+17	1386	1596390029	app/scrcpy.exe.p/src_file_handler.c.obj	9e3149159bf849aa
+3	1494	1596390029	app/scrcpy.exe.p/src_cli.c.obj	1bbe75175feb511
+21	1550	1596390029	app/scrcpy.exe.p/src_input_manager.c.obj	af46b68741b95352
+252	1591	1596390029	app/scrcpy.exe.p/src_server.c.obj	af9e352b012ee561
+162	1678	1596390029	app/scrcpy.exe.p/src_scrcpy.c.obj	4b9d4668b7a707aa
+276	1679	1596390029	app/scrcpy.exe.p/src_stream.c.obj	9ec71fc16c362177
+1016	1958	1596390029	app/scrcpy.exe.p/src_util_net.c.obj	3242dfdfb334623f
+1198	2056	1596390029	app/scrcpy.exe.p/src_util_str_util.c.obj	2e2a5ff37e953e11
+1242	2061	1596390029	app/scrcpy.exe.p/src_sys_win_command.c.obj	82157c0c7081e95d
+2061	2333	1596390029	app/scrcpy.exe	dacbe21cbd863516

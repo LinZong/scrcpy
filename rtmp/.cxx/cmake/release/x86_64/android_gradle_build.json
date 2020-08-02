@@ -1,64 +1,64 @@
 {
   "stringTable": {
-    "0": "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/release/x86_64",
-    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -O2 -DNDEBUG -fPIC"
+    "0": "D:/Code/JavaCode/scrcpy/rtmp/.cxx/cmake/release/x86_64",
+    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -O2 -DNDEBUG -fPIC"
   },
   "buildFiles": [
-    "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake",
-    "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/build/cmake/platforms.cmake",
-    "/Users/hotarine/Code/scrcpy/rtmp/CMakeLists.txt"
+    "D:\\android-sdk\\ndk\\20.0.5594570\\build\\cmake\\platforms.cmake",
+    "D:\\android-sdk\\ndk\\20.0.5594570\\build\\cmake\\android.toolchain.cmake",
+    "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt"
   ],
   "cleanCommands": [
-    "/Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/release/x86_64\" clean"
+    "D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\release\\x86_64\" clean"
   ],
-  "buildTargetsCommand": "/Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/release/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\release\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "rtmp-lib-Release-x86_64": {
-      "buildCommand": "/Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/release/x86_64\" rtmp-lib",
+      "buildCommand": "D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\release\\x86_64\" rtmp-lib",
       "buildType": "release",
-      "toolchain": "2608524012",
+      "toolchain": "2877858802",
       "abi": "x86_64",
       "artifactName": "rtmp-lib",
       "files": [
         {
-          "src": "/Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/amf.c",
+          "src": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\src\\main\\cpp\\rtmp-handle.cpp",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "/Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/hashswf.c",
+          "src": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\amf.c",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "/Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/log.c",
+          "src": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\hashswf.c",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "/Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/parseurl.c",
+          "src": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\log.c",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "/Users/hotarine/Code/scrcpy/rtmp/libs/rtmp/librtmp/rtmp.c",
+          "src": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\parseurl.c",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         },
         {
-          "src": "/Users/hotarine/Code/scrcpy/rtmp/src/main/cpp/rtmp-handle.cpp",
+          "src": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\rtmp.c",
           "flagsOrdinal": 1,
           "workingDirectoryOrdinal": 0
         }
       ],
       "headers": [],
-      "output": "/Users/hotarine/Code/scrcpy/rtmp/build/intermediates/cmake/release/obj/x86_64/librtmp-lib.so"
+      "output": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\build\\intermediates\\cmake\\release\\obj\\x86_64\\librtmp-lib.so"
     }
   },
   "toolchains": {
-    "2608524012": {
-      "cCompilerExecutable": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang",
-      "cppCompilerExecutable": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    "2877858802": {
+      "cCompilerExecutable": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
     }
   },
   "cFileExtensions": [

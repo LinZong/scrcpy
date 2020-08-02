@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "D:\\android-sdk\\ndk\\20.0.5594570\\build\\cmake\\platforms.cmake",
+    "D:\\android-sdk\\ndk\\20.0.5594570\\build\\cmake\\android.toolchain.cmake",
+    "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\debug\\x86_64\" clean"
+  ],
+  "buildTargetsCommand": "D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\debug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "rtmp-lib-Debug-x86_64": {
+      "artifactName": "rtmp-lib",
+      "buildCommand": "D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\debug\\x86_64\" rtmp-lib",
+      "abi": "x86_64",
+      "output": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\build\\intermediates\\cmake\\debug\\obj\\x86_64\\librtmp-lib.so"
+    }
+  }
+}

@@ -1,23 +1,2 @@
-ninja: Entering directory `/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/release/x86_64'
-[1/7] Building C object CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/hashswf.c.o
-[2/7] Building C object CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/parseurl.c.o
-[3/7] Building C object CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/log.c.o
-[4/7] Building CXX object CMakeFiles/rtmp-lib.dir/src/main/cpp/rtmp-handle.cpp.o
-[5/7] Building C object CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/amf.c.o
-In file included from ../../../../libs/rtmp/librtmp/amf.c:33:
-../../../../libs/rtmp/librtmp/bytes.h:74:2: warning: "Float word order not defined, assuming the same as byte order!" [-W#warnings]
-#warning "Float word order not defined, assuming the same as byte order!"
- ^
-1 warning generated.
-[6/7] Building C object CMakeFiles/rtmp-lib.dir/libs/rtmp/librtmp/rtmp.c.o
-../../../../libs/rtmp/librtmp/rtmp.c:922:9: warning: expression result unused [-Wunused-value]
-        flags;
-        ^~~~~
-../../../../libs/rtmp/librtmp/rtmp.c:961:68: warning: incompatible integer to pointer conversion passing 'unsigned long' to parameter of type 'socklen_t *' (aka 'unsigned int *') [-Wint-conversion]
-                        getsockopt(r->m_sb.sb_socket, SOL_SOCKET, SO_ERROR, &error, sizeof(int));
-                                                                                    ^~~~~~~~~~~
-/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/sys/socket.h:311:92: note: passing argument to parameter '__value_length' here
-__socketcall int getsockopt(int __fd, int __level, int __option, void* __value, socklen_t* __value_length);
-                                                                                           ^
-2 warnings generated.
-[7/7] Linking CXX shared library ../../../../build/intermediates/cmake/release/obj/x86_64/librtmp-lib.so
+ninja: Entering directory `D:\Code\JavaCode\scrcpy\rtmp\.cxx\cmake\release\x86_64'
+ninja: no work to do.

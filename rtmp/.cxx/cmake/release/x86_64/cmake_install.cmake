@@ -1,8 +1,8 @@
-# Install script for directory: /Users/hotarine/Code/scrcpy/rtmp
+# Install script for directory: D:/Code/JavaCode/scrcpy/rtmp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Project")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/release/x86_64/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Code/JavaCode/scrcpy/rtmp/.cxx/cmake/release/x86_64/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,0 +1,7 @@
+Executable : D:\android-sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+D:\Code\JavaCode\scrcpy\rtmp\.cxx\cmake\debug\armeabi-v7a
+rtmp-lib
+jvmArgs : 
+

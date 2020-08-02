@@ -17,7 +17,7 @@
 	zip-win32 zip-win64 \
 	sums release
 
-GRADLE ?= ./gradlew
+GRADLE ?= gradlew.bat
 
 SERVER_BUILD_DIR := build-server
 WIN32_BUILD_DIR := build-win32

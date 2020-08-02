@@ -1,0 +1,70 @@
+{
+  "stringTable": {
+    "0": "D:/Code/JavaCode/scrcpy/rtmp/.cxx/cmake/debug/x86",
+    "1": "--target=i686-none-linux-android21 --gcc-toolchain=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "D:\\android-sdk\\ndk\\20.0.5594570\\build\\cmake\\platforms.cmake",
+    "D:\\android-sdk\\ndk\\20.0.5594570\\build\\cmake\\android.toolchain.cmake",
+    "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "rtmp-lib-Debug-x86": {
+      "buildCommand": "D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\debug\\x86\" rtmp-lib",
+      "buildType": "debug",
+      "toolchain": "2877858802",
+      "abi": "x86",
+      "artifactName": "rtmp-lib",
+      "files": [
+        {
+          "src": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\src\\main\\cpp\\rtmp-handle.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\amf.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\hashswf.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\log.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\parseurl.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\rtmp.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\build\\intermediates\\cmake\\debug\\obj\\x86\\librtmp-lib.so"
+    }
+  },
+  "toolchains": {
+    "2877858802": {
+      "cCompilerExecutable": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

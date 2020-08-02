@@ -1,0 +1,37 @@
+[
+{
+  "directory": "D:/Code/JavaCode/scrcpy/rtmp/.cxx/cmake/debug/x86",
+  "command": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\rtmp-lib.dir\\src\\main\\cpp\\rtmp-handle.cpp.o -c D:\\Code\\JavaCode\\scrcpy\\rtmp\\src\\main\\cpp\\rtmp-handle.cpp",
+  "file": "D:/Code/JavaCode/scrcpy/rtmp/src/main/cpp/rtmp-handle.cpp"
+},
+
+{
+  "directory": "D:/Code/JavaCode/scrcpy/rtmp/.cxx/cmake/debug/x86",
+  "command": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\rtmp-lib.dir\\libs\\rtmp\\librtmp\\amf.c.o   -c D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\amf.c",
+  "file": "D:/Code/JavaCode/scrcpy/rtmp/libs/rtmp/librtmp/amf.c"
+},
+
+{
+  "directory": "D:/Code/JavaCode/scrcpy/rtmp/.cxx/cmake/debug/x86",
+  "command": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\rtmp-lib.dir\\libs\\rtmp\\librtmp\\hashswf.c.o   -c D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\hashswf.c",
+  "file": "D:/Code/JavaCode/scrcpy/rtmp/libs/rtmp/librtmp/hashswf.c"
+},
+
+{
+  "directory": "D:/Code/JavaCode/scrcpy/rtmp/.cxx/cmake/debug/x86",
+  "command": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\rtmp-lib.dir\\libs\\rtmp\\librtmp\\log.c.o   -c D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\log.c",
+  "file": "D:/Code/JavaCode/scrcpy/rtmp/libs/rtmp/librtmp/log.c"
+},
+
+{
+  "directory": "D:/Code/JavaCode/scrcpy/rtmp/.cxx/cmake/debug/x86",
+  "command": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\rtmp-lib.dir\\libs\\rtmp\\librtmp\\parseurl.c.o   -c D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\parseurl.c",
+  "file": "D:/Code/JavaCode/scrcpy/rtmp/libs/rtmp/librtmp/parseurl.c"
+},
+
+{
+  "directory": "D:/Code/JavaCode/scrcpy/rtmp/.cxx/cmake/debug/x86",
+  "command": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=i686-none-linux-android21 --gcc-toolchain=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot -DNO_CRYPTO -Drtmp_lib_EXPORTS -I../../../../libs/rtmp/librtmp  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles\\rtmp-lib.dir\\libs\\rtmp\\librtmp\\rtmp.c.o   -c D:\\Code\\JavaCode\\scrcpy\\rtmp\\libs\\rtmp\\librtmp\\rtmp.c",
+  "file": "D:/Code/JavaCode/scrcpy/rtmp/libs/rtmp/librtmp/rtmp.c"
+}
+]

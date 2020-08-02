@@ -5,9 +5,9 @@
     "environmentVariables": []
   },
   "cmake": {
-    "cmakeArtifactsBaseFolder": "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/release/x86_64",
-    "cmakeServerLogFile": "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/release/x86_64/cmake_server_log.txt",
-    "cmakeWrappingBaseFolder": "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cxx/release/x86_64",
+    "cmakeArtifactsBaseFolder": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\release\\x86_64",
+    "cmakeServerLogFile": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\release\\x86_64\\cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cxx\\release\\x86_64",
     "effectiveConfiguration": {
       "name": "traditional-android-studio-cmake-environment",
       "description": "Composite reified CMakeSettings configuration",
@@ -15,9 +15,9 @@
       "inheritEnvironments": [
         "ndk"
       ],
-      "buildRoot": "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/release/x86_64",
-      "cmakeToolchain": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake",
-      "cmakeExecutable": "/Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
+      "buildRoot": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\release\\x86_64",
+      "cmakeToolchain": "D:\\android-sdk\\ndk\\20.0.5594570\\build\\cmake\\android.toolchain.cmake",
+      "cmakeExecutable": "D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
       "variables": [
         {
           "name": "CMAKE_BUILD_TYPE",
@@ -25,7 +25,7 @@
         },
         {
           "name": "CMAKE_TOOLCHAIN_FILE",
-          "value": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake"
+          "value": "D:\\android-sdk\\ndk\\20.0.5594570\\build\\cmake\\android.toolchain.cmake"
         },
         {
           "name": "ANDROID_ABI",
@@ -33,7 +33,7 @@
         },
         {
           "name": "ANDROID_NDK",
-          "value": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570"
+          "value": "D:\\android-sdk\\ndk\\20.0.5594570"
         },
         {
           "name": "ANDROID_PLATFORM",
@@ -45,7 +45,7 @@
         },
         {
           "name": "CMAKE_ANDROID_NDK",
-          "value": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570"
+          "value": "D:\\android-sdk\\ndk\\20.0.5594570"
         },
         {
           "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
@@ -53,11 +53,11 @@
         },
         {
           "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
-          "value": "/Users/hotarine/Code/scrcpy/rtmp/build/intermediates/cmake/release/obj/x86_64"
+          "value": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\build\\intermediates\\cmake\\release\\obj\\x86_64"
         },
         {
           "name": "CMAKE_MAKE_PROGRAM",
-          "value": "/Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
+          "value": "D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
         },
         {
           "name": "CMAKE_SYSTEM_NAME",
@@ -70,14 +70,14 @@
       ]
     }
   },
-  "cxxBuildFolder": "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/release/x86_64",
+  "cxxBuildFolder": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\release\\x86_64",
   "info": {
     "abi": "X86_64",
     "bitness": 64,
     "deprecated": false,
     "default": true
   },
-  "originalCxxBuildFolder": "/Users/hotarine/Code/scrcpy/rtmp/.cxx/cmake/release/x86_64",
+  "originalCxxBuildFolder": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\release\\x86_64",
   "variant": {
     "buildSystemArgumentList": [],
     "buildTargetSet": [],
@@ -88,24 +88,24 @@
     "module": {
       "buildSystem": "CMAKE",
       "cmake": {
-        "cmakeExe": "/Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
+        "cmakeExe": "D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
         "minimumCmakeVersion": "3.10.2",
-        "ninjaExe": "/Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
+        "ninjaExe": "D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
       },
-      "cmakeToolchainFile": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake",
-      "cxxFolder": "/Users/hotarine/Code/scrcpy/rtmp/.cxx",
+      "cmakeToolchainFile": "D:\\android-sdk\\ndk\\20.0.5594570\\build\\cmake\\android.toolchain.cmake",
+      "cxxFolder": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx",
       "gradleModulePathName": ":rtmp",
-      "intermediatesFolder": "/Users/hotarine/Code/scrcpy/rtmp/build/intermediates",
-      "makeFile": "/Users/hotarine/Code/scrcpy/rtmp/CMakeLists.txt",
-      "moduleBuildFile": "/Users/hotarine/Code/scrcpy/rtmp/build.gradle",
-      "moduleRootFolder": "/Users/hotarine/Code/scrcpy/rtmp",
+      "intermediatesFolder": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\build\\intermediates",
+      "makeFile": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+      "moduleBuildFile": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\build.gradle",
+      "moduleRootFolder": "D:\\Code\\JavaCode\\scrcpy\\rtmp",
       "ndkDefaultAbiList": [
         "ARMEABI_V7A",
         "ARM64_V8A",
         "X86",
         "X86_64"
       ],
-      "ndkFolder": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570",
+      "ndkFolder": "D:\\android-sdk\\ndk\\20.0.5594570",
       "ndkMetaAbiList": [
         {
           "abi": "ARMEABI_V7A",
@@ -161,28 +161,28 @@
       ],
       "ndkVersion": "20.0.5594570",
       "project": {
-        "compilerSettingsCacheFolder": "/Users/hotarine/Code/scrcpy/.cxx",
-        "cxxFolder": "/Users/hotarine/Code/scrcpy/.cxx",
+        "compilerSettingsCacheFolder": "D:\\Code\\JavaCode\\scrcpy\\.cxx",
+        "cxxFolder": "D:\\Code\\JavaCode\\scrcpy\\.cxx",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
-        "rootBuildGradleFolder": "/Users/hotarine/Code/scrcpy",
-        "sdkFolder": "/Users/hotarine/Library/Android/sdk"
+        "rootBuildGradleFolder": "D:\\Code\\JavaCode\\scrcpy",
+        "sdkFolder": "D:\\android-sdk"
       },
       "splitsAbiFilterSet": [],
       "stlSharedObjectMap": {
         "LIBCXX_SHARED": {
-          "ARMEABI_V7A": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
-          "ARM64_V8A": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
-          "X86": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
-          "X86_64": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
+          "ARMEABI_V7A": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
+          "ARM64_V8A": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
+          "X86": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
+          "X86_64": "D:\\android-sdk\\ndk\\20.0.5594570\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
         },
         "LIBCXX_STATIC": {},
         "NONE": {},
         "SYSTEM": {}
       }
     },
-    "objFolder": "/Users/hotarine/Code/scrcpy/rtmp/build/intermediates/cmake/release/obj",
+    "objFolder": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\build\\intermediates\\cmake\\release\\obj",
     "variantName": "release",
     "validAbiList": [
       "ARMEABI_V7A",
