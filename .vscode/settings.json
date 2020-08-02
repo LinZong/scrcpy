@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "__node_handle": "c",
+        "__locale": "c",
+        "chrono": "c",
+        "cstdio": "c",
+        "ctime": "c",
+        "cwchar": "c",
+        "locale": "c",
+        "iterator": "c"
+    }
+}

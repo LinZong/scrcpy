@@ -1,0 +1,122 @@
+{
+  "stringTable": {
+    "0": "/Users/hotarine/Code/scrcpy/rtmp-client/.cxx/cmake/debug/x86",
+    "1": "--target=i686-none-linux-android16 --gcc-toolchain=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DNO_CRYPTO -Drtmp_jni_EXPORTS -I../../../../src/main/cpp/librtmp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake",
+    "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/build/cmake/platforms.cmake",
+    "/Users/hotarine/Code/scrcpy/rtmp-client/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/hotarine/Code/scrcpy/rtmp-client/.cxx/cmake/debug/x86\" clean"
+  ],
+  "buildTargetsCommand": "/Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/hotarine/Code/scrcpy/rtmp-client/.cxx/cmake/debug/x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "rtmp-jni-Debug-x86": {
+      "buildCommand": "/Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/hotarine/Code/scrcpy/rtmp-client/.cxx/cmake/debug/x86\" rtmp-jni",
+      "buildType": "debug",
+      "toolchain": "1260293078",
+      "abi": "x86",
+      "artifactName": "rtmp-jni",
+      "files": [
+        {
+          "src": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/rtmpmuxer.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp-jni.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/amf.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/hashswf.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/log.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/parseurl.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/rtmp.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/flvmuxer/xiecc_rtmp.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [
+        {
+          "header": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp-jni.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/amf.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/bytes.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/dh.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/dhgroups.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/handshake.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/http.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/log.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/rtmp.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/librtmp/rtmp_sys.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "/Users/hotarine/Code/scrcpy/rtmp-client/src/main/cpp/flvmuxer/xiecc_rtmp.h",
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "output": "/Users/hotarine/Code/scrcpy/rtmp-client/build/intermediates/cmake/debug/obj/x86/librtmp-jni.so"
+    }
+  },
+  "toolchains": {
+    "1260293078": {
+      "cCompilerExecutable": "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

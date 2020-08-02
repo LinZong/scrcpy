@@ -306,6 +306,7 @@ scrcpy(const struct scrcpy_options *options) {
         .stay_awake = options->stay_awake,
         .codec_options = options->codec_options,
         .force_adb_forward = options->force_adb_forward,
+        .rtmp_server_url = options->rtmp_server_url
     };
     if (!server_start(&server, options->serial, &params)) {
         return false;

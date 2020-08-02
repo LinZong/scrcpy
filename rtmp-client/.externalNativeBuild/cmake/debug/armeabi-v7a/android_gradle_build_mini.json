@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/Users/hotarine/Code/LibRtmp-Client-for-Android/rtmp-client/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/hotarine/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/hotarine/Code/LibRtmp-Client-for-Android/rtmp-client/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "rtmp-jni-Debug-armeabi-v7a": {
+      "artifactName": "rtmp-jni",
+      "buildCommand": "/Users/hotarine/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/hotarine/Code/LibRtmp-Client-for-Android/rtmp-client/.externalNativeBuild/cmake/debug/armeabi-v7a --target rtmp-jni",
+      "abi": "armeabi-v7a",
+      "output": "/Users/hotarine/Code/LibRtmp-Client-for-Android/rtmp-client/build/intermediates/cmake/debug/obj/armeabi-v7a/librtmp-jni.so"
+    }
+  }
+}

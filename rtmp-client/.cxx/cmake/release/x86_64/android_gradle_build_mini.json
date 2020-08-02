@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake",
+    "/Users/hotarine/Library/Android/sdk/ndk/20.0.5594570/build/cmake/platforms.cmake",
+    "/Users/hotarine/Code/scrcpy/rtmp-client/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/hotarine/Code/scrcpy/rtmp-client/.cxx/cmake/release/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/hotarine/Code/scrcpy/rtmp-client/.cxx/cmake/release/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "rtmp-jni-Release-x86_64": {
+      "artifactName": "rtmp-jni",
+      "buildCommand": "/Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/hotarine/Code/scrcpy/rtmp-client/.cxx/cmake/release/x86_64\" rtmp-jni",
+      "abi": "x86_64",
+      "output": "/Users/hotarine/Code/scrcpy/rtmp-client/build/intermediates/cmake/release/obj/x86_64/librtmp-jni.so"
+    }
+  }
+}

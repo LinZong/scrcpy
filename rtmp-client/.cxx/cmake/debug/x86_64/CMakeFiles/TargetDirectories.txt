@@ -1,0 +1,3 @@
+/Users/hotarine/Code/scrcpy/rtmp-client/.cxx/cmake/debug/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/hotarine/Code/scrcpy/rtmp-client/.cxx/cmake/debug/x86_64/CMakeFiles/edit_cache.dir
+/Users/hotarine/Code/scrcpy/rtmp-client/.cxx/cmake/debug/x86_64/CMakeFiles/rtmp-jni.dir

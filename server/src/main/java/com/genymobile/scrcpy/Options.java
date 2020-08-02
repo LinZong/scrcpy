@@ -16,6 +16,15 @@ public class Options {
     private boolean showTouches;
     private boolean stayAwake;
     private String codecOptions;
+    private String rtmpServerUrl;
+
+    public String getRtmpServerUrl() {
+        return rtmpServerUrl;
+    }
+
+    public void setRtmpServerUrl(String rtmpServerUrl) {
+        this.rtmpServerUrl = rtmpServerUrl;
+    }
 
     public Ln.Level getLogLevel() {
         return logLevel;

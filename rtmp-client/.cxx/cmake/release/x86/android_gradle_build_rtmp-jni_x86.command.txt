@@ -1,0 +1,7 @@
+Executable : /Users/hotarine/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+arguments : 
+-C
+/Users/hotarine/Code/scrcpy/rtmp-client/.cxx/cmake/release/x86
+rtmp-jni
+jvmArgs : 
+

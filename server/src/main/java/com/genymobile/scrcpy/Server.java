@@ -54,7 +54,7 @@ public final class Server {
         boolean tunnelForward = options.isTunnelForward();
 
         try (DesktopConnection connection = DesktopConnection.open(device, tunnelForward)) {
-            ScreenEncoder screenEncoder = new ScreenEncoder(options.getSendFrameMeta(), options.getBitRate(), options.getMaxFps(), codecOptions);
+            ScreenEncoder screenEncoder = new ScreenEncoder(options.getSendFrameMeta(), options.getBitRate(), options.getMaxFps(), codecOptions,options.getRtmpServerUrl());
 
             if (options.getControl()) {
                 final Controller controller = new Controller(device, connection);
@@ -120,7 +120,8 @@ public final class Server {
                     "The server version (" + BuildConfig.VERSION_NAME + ") does not match the client " + "(" + clientVersion + ")");
         }
 
-        final int expectedParameters = 14;
+        final int expectedParameters = 15; // 14 -> 15 for rtmp server location.
+
         if (args.length != expectedParameters) {
             throw new IllegalArgumentException("Expecting " + expectedParameters + " parameters");
         }
@@ -167,6 +168,11 @@ public final class Server {
         String codecOptions = args[13];
         options.setCodecOptions(codecOptions);
 
+        String rtmpServerUrl = args[14];
+        if(!"NULL".equals(rtmpServerUrl)) {
+            Ln.i("Receiving RTMP server url:" + rtmpServerUrl);
+            options.setRtmpServerUrl(rtmpServerUrl);
+        }
         return options;
     }
 

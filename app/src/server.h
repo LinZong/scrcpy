@@ -57,6 +57,7 @@ struct server_params {
     bool show_touches;
     bool stay_awake;
     bool force_adb_forward;
+    const char* rtmp_server_url;
 };
 
 // init default values

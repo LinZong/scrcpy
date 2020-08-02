@@ -43,6 +43,7 @@ struct scrcpy_options {
     bool mipmaps;
     bool stay_awake;
     bool force_adb_forward;
+    const char* rtmp_server_url;
 };
 
 #define SCRCPY_OPTIONS_DEFAULT { \

@@ -12,43 +12,45 @@
 #include "util/log.h"
 
 static void
-print_version(void) {
+print_version(void)
+{
     fprintf(stderr, "scrcpy %s\n\n", SCRCPY_VERSION);
 
     fprintf(stderr, "dependencies:\n");
     fprintf(stderr, " - SDL %d.%d.%d\n", SDL_MAJOR_VERSION, SDL_MINOR_VERSION,
-                                         SDL_PATCHLEVEL);
+            SDL_PATCHLEVEL);
     fprintf(stderr, " - libavcodec %d.%d.%d\n", LIBAVCODEC_VERSION_MAJOR,
-                                                LIBAVCODEC_VERSION_MINOR,
-                                                LIBAVCODEC_VERSION_MICRO);
+            LIBAVCODEC_VERSION_MINOR,
+            LIBAVCODEC_VERSION_MICRO);
     fprintf(stderr, " - libavformat %d.%d.%d\n", LIBAVFORMAT_VERSION_MAJOR,
-                                                 LIBAVFORMAT_VERSION_MINOR,
-                                                 LIBAVFORMAT_VERSION_MICRO);
+            LIBAVFORMAT_VERSION_MINOR,
+            LIBAVFORMAT_VERSION_MICRO);
     fprintf(stderr, " - libavutil %d.%d.%d\n", LIBAVUTIL_VERSION_MAJOR,
-                                               LIBAVUTIL_VERSION_MINOR,
-                                               LIBAVUTIL_VERSION_MICRO);
+            LIBAVUTIL_VERSION_MINOR,
+            LIBAVUTIL_VERSION_MICRO);
 }
 
 static SDL_LogPriority
-convert_log_level_to_sdl(enum sc_log_level level) {
-    switch (level) {
-        case SC_LOG_LEVEL_DEBUG:
-            return SDL_LOG_PRIORITY_DEBUG;
-        case SC_LOG_LEVEL_INFO:
-            return SDL_LOG_PRIORITY_INFO;
-        case SC_LOG_LEVEL_WARN:
-            return SDL_LOG_PRIORITY_WARN;
-        case SC_LOG_LEVEL_ERROR:
-            return SDL_LOG_PRIORITY_ERROR;
-        default:
-            assert(!"unexpected log level");
-            return SC_LOG_LEVEL_INFO;
+convert_log_level_to_sdl(enum sc_log_level level)
+{
+    switch (level)
+    {
+    case SC_LOG_LEVEL_DEBUG:
+        return SDL_LOG_PRIORITY_DEBUG;
+    case SC_LOG_LEVEL_INFO:
+        return SDL_LOG_PRIORITY_INFO;
+    case SC_LOG_LEVEL_WARN:
+        return SDL_LOG_PRIORITY_WARN;
+    case SC_LOG_LEVEL_ERROR:
+        return SDL_LOG_PRIORITY_ERROR;
+    default:
+        assert(!"unexpected log level");
+        return SC_LOG_LEVEL_INFO;
     }
 }
 
-
-int
-main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
 #ifdef __WINDOWS__
     // disable buffering, we want logs immediately
     // even line buffering (setvbuf() with mode _IOLBF) is not sufficient
@@ -66,30 +68,34 @@ main(int argc, char *argv[]) {
     args.opts.log_level = SC_LOG_LEVEL_DEBUG;
 #endif
 
-    if (!scrcpy_parse_args(&args, argc, argv)) {
+    if (!scrcpy_parse_args(&args, argc, argv))
+    {
         return 1;
     }
 
     SDL_LogPriority sdl_log = convert_log_level_to_sdl(args.opts.log_level);
     SDL_LogSetAllPriority(sdl_log);
 
-    if (args.help) {
+    if (args.help)
+    {
         scrcpy_print_usage(argv[0]);
         return 0;
     }
 
-    if (args.version) {
+    if (args.version)
+    {
         print_version();
         return 0;
     }
 
-    LOGI("scrcpy " SCRCPY_VERSION " <https://github.com/Genymobile/scrcpy>");
+    LOGI("scrcpy " SCRCPY_VERSION " <https://github.com/Genymobile/scrcpy> with RTMP streaming support.");
 
 #ifdef SCRCPY_LAVF_REQUIRES_REGISTER_ALL
     av_register_all();
 #endif
 
-    if (avformat_network_init()) {
+    if (avformat_network_init())
+    {
         return 1;
     }
 
@@ -97,8 +103,9 @@ main(int argc, char *argv[]) {
 
     avformat_network_deinit(); // ignore failure
 
-#if defined (__WINDOWS__) && ! defined (WINDOWS_NOCONSOLE)
-    if (res != 0) {
+#if defined(__WINDOWS__) && !defined(WINDOWS_NOCONSOLE)
+    if (res != 0)
+    {
         fprintf(stderr, "Press any key to continue...\n");
         getchar();
     }
