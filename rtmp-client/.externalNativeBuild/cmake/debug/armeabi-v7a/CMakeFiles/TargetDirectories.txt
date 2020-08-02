@@ -1,3 +1,0 @@
-/Users/hotarine/Code/LibRtmp-Client-for-Android/rtmp-client/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir
-/Users/hotarine/Code/LibRtmp-Client-for-Android/rtmp-client/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-/Users/hotarine/Code/LibRtmp-Client-for-Android/rtmp-client/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/rtmp-jni.dir

@@ -39,7 +39,7 @@ public interface RtmpPublisher {
    * @param size video stream byte size (not the whole length of byte array)
    * @param dts video stream decoding timestamp
    */
-  void publishVideoData(byte[] data, int size, int dts);
+  boolean publishVideoData(byte[] data, int size, int dts);
 
   /**
    * publish an audio content packet to server
@@ -48,7 +48,7 @@ public interface RtmpPublisher {
    * @param size audio stream byte size (not the whole length of byte array)
    * @param dts audio stream decoding timestamp
    */
-  void publishAudioData(byte[] data, int size, int dts);
+  boolean publishAudioData(byte[] data, int size, int dts);
 
   /**
    * set video resolution

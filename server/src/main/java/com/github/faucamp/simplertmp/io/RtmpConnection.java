@@ -434,14 +434,14 @@ public class RtmpConnection implements RtmpPublisher {
   }
 
   @Override
-  public void publishAudioData(byte[] data, int size, int dts) {
+  public boolean publishAudioData(byte[] data, int size, int dts) {
     if (data == null
         || data.length == 0
         || dts < 0
         || !connected
         || currentStreamId == 0
         || !publishPermitted) {
-      return;
+      return false;
     }
     Audio audio = new Audio();
     audio.setData(data, size);
@@ -450,17 +450,18 @@ public class RtmpConnection implements RtmpPublisher {
     sendRtmpPacket(audio);
     //bytes to bits
     bitrateManager.calculateBitrate(size * 8);
+    return true;
   }
 
   @Override
-  public void publishVideoData(byte[] data, int size, int dts) {
+  public boolean publishVideoData(byte[] data, int size, int dts) {
     if (data == null
         || data.length == 0
         || dts < 0
         || !connected
         || currentStreamId == 0
         || !publishPermitted) {
-      return;
+      return false;
     }
     Video video = new Video();
     video.setData(data, size);
@@ -469,6 +470,7 @@ public class RtmpConnection implements RtmpPublisher {
     sendRtmpPacket(video);
     //bytes to bits
     bitrateManager.calculateBitrate(size * 8);
+    return true;
   }
 
   private void sendRtmpPacket(RtmpPacket rtmpPacket) {
