@@ -13,10 +13,10 @@ build_cmd(char *cmd, size_t len, const char *const argv[]) {
     // only make it work for this very specific program
     // (don't handle escaping nor quotes)
     size_t ret = xstrjoin(cmd, argv, ' ', len);
-    if (ret >= len) {
-        LOGE("Command too long (%" PRIsizet " chars)", len - 1);
-        return -1;
-    }
+    // if (ret >= len) {
+    //     LOGE("Command too long (%" PRIsizet " chars)", len - 1);
+    //     return -1;
+    // }
     return 0;
 }
 
@@ -27,12 +27,12 @@ cmd_execute(const char *const argv[], HANDLE *handle) {
     memset(&si, 0, sizeof(si));
     si.cb = sizeof(si);
 
-    char cmd[256];
+    char cmd[512];
     if (build_cmd(cmd, sizeof(cmd), argv)) {
         *handle = NULL;
         return PROCESS_ERROR_GENERIC;
     }
-
+    LOGI("Executing: %s\n",cmd);
     wchar_t *wide = utf8_to_wide_char(cmd);
     if (!wide) {
         LOGC("Could not allocate wide char string");

@@ -13,7 +13,397 @@
   },
   {
     "level": "INFO",
-    "message": "JSON \u0027D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\debug\\x86\\android_gradle_build.json\u0027 was up-to-date",
+    "message": "Trying to locate CMake in local SDK repository.",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "- CMake found in SDK at \u0027D:\\android-sdk\\cmake\\3.10.2.4988404\u0027 had version \u00273.10.2\u0027",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "CMake \u00273.6.0\u0027 found in SDK did not match requested version \u00273.10.2\u0027.",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "rebuilding JSON D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\debug\\x86\\android_gradle_build.json due to:",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "- force flag, will remove stale json folder",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "removing stale contents from \u0027D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\debug\\x86\u0027",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "created folder \u0027D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\debug\\x86\u0027",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "executing cmake Executable : D:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe\narguments : \n-HD:\\Code\\JavaCode\\scrcpy\\rtmp\n-DCMAKE_BUILD_TYPE\u003dDebug\n-DCMAKE_TOOLCHAIN_FILE\u003dD:\\android-sdk\\ndk\\20.0.5594570\\build\\cmake\\android.toolchain.cmake\n-DANDROID_ABI\u003dx86\n-DANDROID_NDK\u003dD:\\android-sdk\\ndk\\20.0.5594570\n-DANDROID_PLATFORM\u003dandroid-21\n-DCMAKE_ANDROID_ARCH_ABI\u003dx86\n-DCMAKE_ANDROID_NDK\u003dD:\\android-sdk\\ndk\\20.0.5594570\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\Code\\JavaCode\\scrcpy\\rtmp\\build\\intermediates\\cmake\\debug\\obj\\x86\n-DCMAKE_MAKE_PROGRAM\u003dD:\\android-sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d21\n-BD:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\debug\\x86\n-GNinja\njvmArgs : \n\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "[\u003d\u003d \"CMake Server\" \u003d\u003d[\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"supportedProtocolVersions\":[{\"isExperimental\":true,\"major\":1,\"minor\":1}],\"type\":\"hello\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "]\u003d\u003d \"CMake Server\" \u003d\u003d]\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\n  \"type\": \"handshake\",\n  \"cookie\": \"gradle-cmake-cookie\",\n  \"protocolVersion\": {\n    \"isExperimental\": true,\n    \"major\": 1,\n    \"minor\": 1\n  },\n  \"sourceDirectory\": \"D:/Code/JavaCode/scrcpy/rtmp\",\n  \"buildDirectory\": \"D:/Code/JavaCode/scrcpy/rtmp/.cxx/cmake/debug/x86\",\n  \"generator\": \"Ninja\"\n}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"gradle-cmake-cookie\",\"inReplyTo\":\"handshake\",\"type\":\"reply\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\n  \"type\": \"configure\",\n  \"cacheArguments\": [\n    \"\",\n    \"-DCMAKE_BUILD_TYPE\\u003dDebug\",\n    \"-DCMAKE_TOOLCHAIN_FILE\\u003dD:\\\\android-sdk\\\\ndk\\\\20.0.5594570\\\\build\\\\cmake\\\\android.toolchain.cmake\",\n    \"-DANDROID_ABI\\u003dx86\",\n    \"-DANDROID_NDK\\u003dD:\\\\android-sdk\\\\ndk\\\\20.0.5594570\",\n    \"-DANDROID_PLATFORM\\u003dandroid-21\",\n    \"-DCMAKE_ANDROID_ARCH_ABI\\u003dx86\",\n    \"-DCMAKE_ANDROID_NDK\\u003dD:\\\\android-sdk\\\\ndk\\\\20.0.5594570\",\n    \"-DCMAKE_EXPORT_COMPILE_COMMANDS\\u003dON\",\n    \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\\u003dD:\\\\Code\\\\JavaCode\\\\scrcpy\\\\rtmp\\\\build\\\\intermediates\\\\cmake\\\\debug\\\\obj\\\\x86\",\n    \"-DCMAKE_MAKE_PROGRAM\\u003dD:\\\\android-sdk\\\\cmake\\\\3.10.2.4988404\\\\bin\\\\ninja.exe\",\n    \"-DCMAKE_SYSTEM_NAME\\u003dAndroid\",\n    \"-DCMAKE_SYSTEM_VERSION\\u003d21\"\n  ]\n}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working C compiler: D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":33,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working C compiler: D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compiler ABI info",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":65,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info - done\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compiler ABI info - done",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compile features",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":96,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":126,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":155,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features - done\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting C compile features - done",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working CXX compiler: D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":184,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Check for working CXX compiler: D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compiler ABI info",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":211,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info - done\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compiler ABI info - done",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compile features",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":237,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":262,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":287,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":311,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features - done\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Detecting CXX compile features - done",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Configuring done\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Configuring done",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"type\":\"reply\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"compute\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"progressCurrent\":1000,\"progressMaximum\":1000,\"progressMessage\":\"Generating\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"message\":\"Generating done\",\"type\":\"message\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "Generating done",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"cookie\":\"\",\"inReplyTo\":\"compute\",\"type\":\"reply\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"cmakeInputs\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"buildFiles\":[{\"isCMake\":true,\"isTemporary\":false,\"sources\":[\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in\"]},{\"isCMake\":false,\"isTemporary\":false,\"sources\":[\"CMakeLists.txt\",\"D:/android-sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake\",\"D:/android-sdk/ndk/20.0.5594570/build/cmake/platforms.cmake\",\"D:/android-sdk/ndk/20.0.5594570/build/cmake/android.toolchain.cmake\"]},{\"isCMake\":false,\"isTemporary\":true,\"sources\":[\".cxx/cmake/debug/x86/CMakeFiles/3.10.2/CMakeSystem.cmake\",\".cxx/cmake/debug/x86/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\".cxx/cmake/debug/x86/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\",\".cxx/cmake/debug/x86/CMakeFiles/feature_tests.c\",\".cxx/cmake/debug/x86/CMakeFiles/feature_tests.c\",\".cxx/cmake/debug/x86/CMakeFiles/feature_tests.c\",\".cxx/cmake/debug/x86/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\".cxx/cmake/debug/x86/CMakeFiles/feature_tests.cxx\",\".cxx/cmake/debug/x86/CMakeFiles/feature_tests.cxx\",\".cxx/cmake/debug/x86/CMakeFiles/feature_tests.cxx\",\".cxx/cmake/debug/x86/CMakeFiles/feature_tests.cxx\",\".cxx/cmake/debug/x86/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\"]}],\"cmakeRootDirectory\":\"D:/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10\",\"cookie\":\"\",\"inReplyTo\":\"cmakeInputs\",\"sourceDirectory\":\"D:/Code/JavaCode/scrcpy/rtmp\",\"type\":\"reply\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"type\":\"codemodel\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "{\"configurations\":[{\"name\":\"Debug\",\"projects\":[{\"buildDirectory\":\"D:/Code/JavaCode/scrcpy/rtmp/.cxx/cmake/debug/x86\",\"name\":\"Project\",\"sourceDirectory\":\"D:/Code/JavaCode/scrcpy/rtmp\",\"targets\":[{\"artifacts\":[\"D:/Code/JavaCode/scrcpy/rtmp/build/intermediates/cmake/debug/obj/x86/librtmp-lib.so\"],\"buildDirectory\":\"D:/Code/JavaCode/scrcpy/rtmp/.cxx/cmake/debug/x86\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror\u003dformat-security   -O0 -fno-limit-debug-info  -fPIC  \",\"defines\":[\"NO_CRYPTO\",\"rtmp_lib_EXPORTS\"],\"includePath\":[{\"path\":\"D:/Code/JavaCode/scrcpy/rtmp/libs/rtmp/librtmp\"}],\"isGenerated\":false,\"language\":\"CXX\",\"sources\":[\"src/main/cpp/rtmp-handle.cpp\"]},{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror\u003dformat-security  -O0 -fno-limit-debug-info  -fPIC  \",\"defines\":[\"NO_CRYPTO\",\"rtmp_lib_EXPORTS\"],\"includePath\":[{\"path\":\"D:/Code/JavaCode/scrcpy/rtmp/libs/rtmp/librtmp\"}],\"isGenerated\":false,\"language\":\"C\",\"sources\":[\"libs/rtmp/librtmp/amf.c\",\"libs/rtmp/librtmp/hashswf.c\",\"libs/rtmp/librtmp/log.c\",\"libs/rtmp/librtmp/parseurl.c\",\"libs/rtmp/librtmp/rtmp.c\"]}],\"fullName\":\"librtmp-lib.so\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack\",\"linkLibraries\":\"-llog -latomic -lm\",\"linkerLanguage\":\"CXX\",\"name\":\"rtmp-lib\",\"sourceDirectory\":\"D:/Code/JavaCode/scrcpy/rtmp\",\"sysroot\":\"D:/android-sdk/ndk/20.0.5594570/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"}]}]}],\"cookie\":\"\",\"inReplyTo\":\"codemodel\",\"type\":\"reply\"}\n",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "done executing cmake",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "write build output D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\debug\\x86\\build_output.txt",
+    "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
+    "tag": "debug|x86"
+  },
+  {
+    "level": "INFO",
+    "message": "write command file D:\\Code\\JavaCode\\scrcpy\\rtmp\\.cxx\\cmake\\debug\\x86\\build_command.txt",
     "file": "D:\\Code\\JavaCode\\scrcpy\\rtmp\\CMakeLists.txt",
     "tag": "debug|x86"
   },

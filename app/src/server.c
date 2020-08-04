@@ -17,12 +17,14 @@
 
 #define SOCKET_NAME "scrcpy"
 #define SERVER_FILENAME "scrcpy-server"
+#define SERVER_RTMP_SO_FILENAME "librtmp-lib.so"
 
 #define DEFAULT_SERVER_PATH PREFIX "/share/scrcpy/" SERVER_FILENAME
 #define DEVICE_SERVER_PATH "/data/local/tmp/scrcpy-server.jar"
+#define DEVICE_SERVER_RTMP_SO_PATH "/data/local/tmp/"
 
 static char *
-get_server_path(void) {
+get_server_path(const char* SERVER_FN) {
 #ifdef __WINDOWS__
     const wchar_t *server_path_env = _wgetenv(L"SCRCPY_SERVER_PATH");
 #else
@@ -58,27 +60,28 @@ get_server_path(void) {
     char *executable_path = get_executable_path();
     if (!executable_path) {
         LOGE("Could not get executable path, "
-             "using " SERVER_FILENAME " from current directory");
+             "using %s from current directory",SERVER_FN);
         // not found, use current directory
-        return SERVER_FILENAME;
+        return SERVER_FN;
     }
     char *dir = dirname(executable_path);
     size_t dirlen = strlen(dir);
 
-    // sizeof(SERVER_FILENAME) gives statically the size including the null byte
-    size_t len = dirlen + 1 + sizeof(SERVER_FILENAME);
+    // sizeof(SERVER_FN) gives statically the size including the null byte
+    size_t len = dirlen + 1 + strlen(SERVER_FN);
+    LOGE("  LEN: %d",len);
     char *server_path = SDL_malloc(len);
     if (!server_path) {
         LOGE("Could not alloc server path string, "
-             "using " SERVER_FILENAME " from current directory");
+             "using %s from current directory",SERVER_FN);
         SDL_free(executable_path);
-        return SERVER_FILENAME;
+        return SERVER_FN;
     }
 
     memcpy(server_path, dir, dirlen);
     server_path[dirlen] = PATH_SEPARATOR;
-    memcpy(&server_path[dirlen + 1], SERVER_FILENAME, sizeof(SERVER_FILENAME));
-    // the final null byte has been copied with SERVER_FILENAME
+    memcpy(&server_path[dirlen + 1], SERVER_FN, strlen(SERVER_FN));
+    // the final null byte has been copied with SERVER_FN
 
     SDL_free(executable_path);
 
@@ -89,7 +92,7 @@ get_server_path(void) {
 
 static bool
 push_server(const char *serial) {
-    char *server_path = get_server_path();
+    char *server_path = get_server_path("scrcpy-server");
     if (!server_path) {
         return false;
     }
@@ -99,6 +102,22 @@ push_server(const char *serial) {
         return false;
     }
     process_t process = adb_push(serial, server_path, DEVICE_SERVER_PATH);
+    SDL_free(server_path);
+    return process_check_success(process, "adb push");
+}
+
+static bool
+push_server_so(const char *serial) {
+    char *server_path = get_server_path(SERVER_RTMP_SO_FILENAME);
+    if (!server_path) {
+        return false;
+    }
+    if (!is_regular_file(server_path)) {
+        LOGE("'%s' does not exist or is not a regular file\n", server_path);
+        SDL_free(server_path);
+        return false;
+    }
+    process_t process = adb_push(serial, server_path, DEVICE_SERVER_RTMP_SO_PATH);
     SDL_free(server_path);
     return process_check_success(process, "adb push");
 }
@@ -265,7 +284,8 @@ execute_server(struct server *server, const struct server_params *params) {
     sprintf(display_id_string, "%"PRIu16, params->display_id);
     const char *const cmd[] = {
         "shell",
-        "CLASSPATH=" DEVICE_SERVER_PATH,
+        "\"export LD_LIBRARY_PATH=" DEVICE_SERVER_RTMP_SO_PATH ":/system/lib64/:/vendor/lib64/:/system/lib/:/vendor/lib/",
+        " && CLASSPATH=" DEVICE_SERVER_PATH,
         "app_process",
 #ifdef SERVER_DEBUGGER
 # define SERVER_DEBUGGER_PORT "5005"
@@ -295,6 +315,7 @@ execute_server(struct server *server, const struct server_params *params) {
         params->stay_awake ? "true" : "false",
         params->codec_options ? params->codec_options : "-",
         params->rtmp_server_url ? params->rtmp_server_url : "NULL"
+        "\""
     };
 #ifdef SERVER_DEBUGGER
     LOGI("Server debugger waiting for a client on device port "
@@ -386,7 +407,7 @@ server_start(struct server *server, const char *serial,
         }
     }
 
-    if (!push_server(serial)) {
+    if (!push_server(serial) || !push_server_so(serial)) {
         goto error1;
     }
 
